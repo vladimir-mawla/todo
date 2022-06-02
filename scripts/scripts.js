@@ -10,10 +10,10 @@ var a = "agg"
 var time = date.getFullYear() + '-' + month + '-' + day + " " + hr + ":" + min + ":" + sec;
 var show_time=$("<div class='time'></div>")
 $("#submit").on("click",function(){
-    if($(".title").val() === "" || $(".description").val() === ""){
+    if(!$(".title").val() || !$(".description").val()){
         alert("Empty todo")
     }else{
-        
+        alert("no")
         show_time.append(time)
     }
 
