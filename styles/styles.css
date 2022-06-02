@@ -9,3 +9,6 @@ body {
 .add-todo {
     padding: 2%;
 }
+#description {
+    width: 400px;
+}
