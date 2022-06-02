@@ -1,3 +1,5 @@
+
+
 var remove=$("<button>Delete</button>").click(function(){
     $(this).parent().remove();
 });
@@ -22,8 +24,18 @@ $(".submit").on("click",function(){
     if(!$("#title").val() || !$("#description").val() ){
         alert("Empty todo")
     }else{
-        alert("no")
+        var array={}
+        array["title"]=$("#title").val()
+        array["description"]=$("#description").val()
+        array["priority"] =$("#priority").val()
+
+        
         show_time.append(time)
+        task.append(remove,done,show_time);
+        $(".list-todos").append(todo);
+        $("#title").val("")
+        $("#description").val("")
+        console.log("jj")
     }
 
 })
