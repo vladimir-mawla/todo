@@ -5,9 +5,9 @@ $(".submit").on("click",function(){
         var date = new Date();
         var month = date.getMonth();
         var day = date.getDate();
-        var c=date.getHours();
-        var m=date.getMinutes();
-        var s=date.getSeconds(); 
+        var hr = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds(); 
     }
 
 })
