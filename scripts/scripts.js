@@ -1,3 +1,12 @@
+var remove=$("<button>Delete</button>").click(function(){
+    $(this).parent().remove();
+});
+var done=$("<button>Done</button>").click(function(){
+    $(this).parent().fadeIn();
+    $(".done-todos").append($(this).parent());
+    
+});
+
 var date = new Date();
 var month = date.getMonth();
 var day = date.getDate();
@@ -9,8 +18,8 @@ var a = "agg"
 
 var time = date.getFullYear() + '-' + month + '-' + day + " " + hr + ":" + min + ":" + sec;
 var show_time=$("<div class='time'></div>")
-$("#submit").on("click",function(){
-    if(!$(".title").val() || !$(".description").val()){
+$(".submit").on("click",function(){
+    if(!$("#title").val() || !$("#description").val() ){
         alert("Empty todo")
     }else{
         alert("no")
