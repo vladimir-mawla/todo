@@ -7,7 +7,11 @@ $(".submit").on("click",function(){
         var day = date.getDate();
         var hr = date.getHours();
         var min = date.getMinutes();
-        var sec = date.getSeconds(); 
+        var sec = date.getSeconds();
+
+        var time = date.getFullYear() + '-' + month + '-' + day + " " + hr + ":" + min + ":" + sec;
+        var show_time=$("<div class='time'></div>")
+        show_time.append(time)
     }
 
 })
