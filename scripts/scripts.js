@@ -1,7 +1,7 @@
+var id =10
 for(var i =1; i<=localStorage.getItem("id");i++){
-    var id=i+1
 
-    var todo=$("<div class='todo'></div>").text(i+ ":" +JSON.parse(localStorage.getItem(i))["title"]+" : "+JSON.parse(localStorage.getItem(i))["description"]);
+    var todo=$("<div class='todo'></div>").text(i + ":" + JSON.parse(localStorage.getItem(i))["title"] + ":" + JSON.parse(localStorage.getItem(i))["description"] + ":" + JSON.parse(localStorage.getItem(i))["priority"]);
     var remove=$("<button>Delete</button>").click(function(){
         $(this).parent().remove();
     });
@@ -15,6 +15,7 @@ for(var i =1; i<=localStorage.getItem("id");i++){
 
     todo.append(remove,done,show_time);
     $(".list-todos").append(todo);
+    var id = i
 } 
 var array={}
 var date = new Date();
