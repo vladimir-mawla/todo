@@ -10,6 +10,7 @@
 <body>
     <div class="container">
         <div class="add-todo">
+            <form>
             <input type="text" id="title" placeholder="Name">
             <input type="text" id="description" placeholder="Description">
                 <select class="point" id="priority">
@@ -19,7 +20,8 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
-                <button class="submit">Submit</button>
+                <input type="submit" id="submit">
+            </form>
         </div>
         <div class="list-todos">
             <h2>Your Todos:</h2>
