@@ -44,3 +44,21 @@ $(".submit").on("click",function(){
     }
 
 })
+for(var i =1; i<=localStorage.getItem("id");i++){
+    var id=i+1
+
+    
+    var remove=$("<button>Delete</button>").click(function(){
+        $(this).parent().remove();
+    });
+    var done=$("<button>Done</button>").click(function(){
+        $(this).parent().fadeIn();
+        $(".done-todos").append($(this).parent());
+        
+    });
+    var show_time=$("<div class='show_time'></div>")
+        show_time.append(localStorage.getItem("show_time"))
+
+    todo.append(remove,done,show_time);
+    $(".list-todos").append(todo);
+} 
