@@ -1,6 +1,8 @@
-if($(".title").val() =="" || $(".description").val() ==""){
-    alert("Empty todo")
-}else{
+$(".submit").on("click",function(){
+    if($(".title").val() =="" || $(".description").val() ==""){
+        alert("Empty todo")
+    }else{
+        
+    }
 
-}
-
+})
