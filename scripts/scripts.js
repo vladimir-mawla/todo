@@ -1,4 +1,4 @@
-
+var id=i+1
 
 var remove=$("<button>Delete</button>").click(function(){
     $(this).parent().remove();
@@ -36,6 +36,7 @@ $(".submit").on("click",function(){
         $("#title").val("")
         $("#description").val("")
         console.log("jj")
+        id +=1
     }
 
 })
